@@ -89,12 +89,13 @@ public class Datatype {
     char c1 = 'a';
     char c2 = '3';
     //char c3 = '4a' '^*&^*^*' 'aa' Can't multiple characters
-    char c4 = ' ';
-    char c5 = ' ';
-    System.out.println(c4);
-    System.out.println(c5);
-    
+    char c4 = ' '; //space is fine
+    String c5 = ""; //String no space is fine
+    // int t1 = 10 + 300L // Can't let 300L downgrade to int
+    long t1 = 10 + 300L; // 10 int upgrade to Long is ok
+    System.out.println(t1);
 
+    
 
       }
   
