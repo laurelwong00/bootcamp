@@ -8,11 +8,15 @@ public class JavaQuest5 {
       if (str.charAt(i) == target) {
         count++;
       } 
-    } if (count > 0) {
+    } 
+
+    if (count > 0) {
       System.out.println("We found " + count + " character c in the String.");
-  } else if (count == 0) {
-    System.out.println("no such character");
-  }
+    } else if (count == 0) {
+      System.out.println("no such character");
+    }
+
+
 }
 }
       
