@@ -1,3 +1,4 @@
+package week2;
 public class JavaQuest6 {
   /**
    * Expected output:

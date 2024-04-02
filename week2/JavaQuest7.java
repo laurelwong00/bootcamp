@@ -1,3 +1,4 @@
+package week2;
 public class JavaQuest7 {
   public static void main(String[] args) {
      // Declare a int array, with value 1 to 10
