@@ -1,6 +1,6 @@
 package week2;
 
-public class DemoString {
+public class StringOperator {
   public static void main(String[] args) {
     String s = "hello";
     String s2 = ""; //empty, blank
@@ -45,7 +45,15 @@ public class DemoString {
     char c = s.charAt(2); //c is l //String s = "hello"
     System.out.println(s.indexOf('l')); //the index of the first matching character //2
     System.out.println(s.indexOf("!")); //-1 
-    
+    System.out.println(s.lastIndexOf('l')); //3
+
+    System.out.println(s.indexOf("ll")); //2 
+    System.out.println(s.lastIndexOf('l')); //2
+
+    //ignore upper lower case
+    System.out.println("hello".equals("HELLO"));//false
+    System.out.println("hello".equalsIgnoreCase("HELLO"));//true
+    System.out.println("hello".equals("HELLO "));//false
 
 
 
