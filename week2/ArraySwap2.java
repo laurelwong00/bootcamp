@@ -9,11 +9,11 @@ public class ArraySwap2 {
       int key = arr5[i];
       int j;
       for (j = i - 1; j >= 0 ; j--) {
-        if (arr5[j] <= key) {
+        if (arr5[j] <= key) { 
           break; //盡量break 係in if instead of else
         } 
         arr5[j+1] = arr5[j];
-      }
+      } //上面的j+1之後會進行j--, 所以下方j+1比上面少至少1
       arr5[j+1] = key;
     }
     System.out.println(Arrays.toString(arr5));
