@@ -14,6 +14,9 @@ public enum Currency {
     return this.fxRate;
   }
 
+  public void setFxRate(double fxRate) {
+    this.fxRate = fxRate;
+  }
 
   private Currency(double fxRate){
     this.fxRate = fxRate;

@@ -26,7 +26,7 @@ public class Transaction {
   }
 
   public double getAmountInHKD() {
-    return this.currency.getFxRate()*amount;
+    return this.currency.getFxRate()*this.amount;
   }
 
 }
