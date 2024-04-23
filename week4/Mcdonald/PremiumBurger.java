@@ -1,6 +1,6 @@
 package week4.Mcdonald;
 
-public class PremiumBurger extends Burger {
+public class PremiumBurger extends Allfood {
   private boolean isSpicy;
 
   public PremiumBurger(int price, String foodname, boolean isSpicy) {
@@ -23,7 +23,7 @@ public class PremiumBurger extends Burger {
   public static void main(String[] args) {
     PremiumBurger premiumCheeseBurger = new PremiumBurger(27, "our worldclass burger for babies", false);
     System.out.println(premiumCheeseBurger.spicyAlert());
-    System.out.println(Burger.coupon);
+    System.out.println(Allfood.coupon);
     System.out.println(coupon);
     System.out.println(numOfLettuce);
   }

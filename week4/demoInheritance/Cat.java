@@ -2,7 +2,7 @@ package week4.demoInheritance;
 
 public class Cat extends Animal{
   //Child class Cat object inherit all instance variables. instance method from parent class Animal object;
-  // but it does not inherit consturctor
+  // but it does not inherit constructor
   public Cat(){
 
   }

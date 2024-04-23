@@ -1,16 +1,16 @@
 package week4.Mcdonald;
 
-public class Burger {
+public class Allfood {
   private int price;
   private String foodname;
   public static String coupon = "discount!";
-  public static int numOfLettuce = 2;
+  //public static int numOfLettuce = 2; //constant variable of burger
 
-  public Burger() {
+  public Allfood() {
 
   }
 
-  public Burger(int price, String foodname) {
+  public Allfood(int price, String foodname) {
     this.price = price;
     this.foodname = foodname;
   }
@@ -32,11 +32,11 @@ public class Burger {
   }
 
   public String toString() {
-    return this.price + this.foodname;
+    return this.price + this.foodname; //extends object
   }
 
   public static void main(String[] args) {
-    Burger cheeseburger = new Burger();
+    Allfood cheeseburger = new Allfood();
     cheeseburger.setPrice(17);
     cheeseburger.setFoodName("no.1 cheeseburger");
     System.out.println(cheeseburger.getFoodname()); 
