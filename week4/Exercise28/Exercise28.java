@@ -49,7 +49,7 @@ class Exercise28 {
         movies.add(new Movies("Return of the Jedi", 8.4, 1983));
 
         // Moive implements Comparable, having comparable function
-        Collections.sort(movies, new DescYearComparator());
+        Collections.sort(movies, new DescNameComparator());
 
         System.out.println("Movies after sorting: ");
         for (Movies movie : movies) {
