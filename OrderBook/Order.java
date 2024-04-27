@@ -44,7 +44,7 @@ public class Order {
 
   @Override
   public String toString() {
-    return "UserId: " + this.userId + " price: " + this.price + " quantity: " + this.quantity;
+    return "\nUserId: " + this.userId + " price: " + this.price + " quantity: " + this.quantity;
   }
 
 }
