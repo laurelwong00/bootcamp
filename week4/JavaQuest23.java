@@ -15,13 +15,27 @@ Otherwise, return false.
 
 //hints : substring() , toCharArray() ?
 public class JavaQuest23 {
-  public boolean sameNumberOfVowels(String s) {
+  public static boolean sameNumberOfVowels(String s) {
+    String a1 = s.substring(0,s.length()/2);
+    String b1 = s.substring(s.length()/2, s.length());
+
+    int a1Count = countVowels(a1);
+    int b1Count = countVowels(b1);
+    return a1Count==b1Count;
+
+  }
+
+  public static int countVowels(String s) {
+    int count = 0;
+    for (int i = 0; i < s.length(); i++) {
+      if ("aeiouAEIOU".contains(s.substring(i,i+1))) {
+        count++;
+      }
+    }
+    return count;
+  }
+  public static void main(String[] args) {
     String s1 = "aeiouuoiea";
-    String a1 = s1.subString(0,s.length()/2);
-    String b1 = s1.subString(s.length()/2 + 1, s.length());
-
-    if (aeiouuoiea)
-
-
+    System.out.println(sameNumberOfVowels(s1));
   }
 }
