@@ -1,12 +1,12 @@
-package week4.LambdaDemo.java.Shape.java;
+package week5.LambdaDemo.Shape;
 
-public class Shape {
-  double area;
+public interface Shape {
+  double area();
 
   public static void main(String[] args) {
     Shape circle = () -> {
       return 3.0d * 3.0d * Math.PI;
-    }
+    };
   }
 
 }

@@ -1,4 +1,4 @@
-package week4.LambdaDemo.java;
+package week5.LambdaDemo;
 
 public interface Swim {
   void swim();
